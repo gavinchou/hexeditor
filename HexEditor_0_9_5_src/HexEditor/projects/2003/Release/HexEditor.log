@@ -1,0 +1,453 @@
+﻿生成启动时间为 2014/7/4 0:02:04。
+     1>项目“C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\projects\2003\HexEditor.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../src /I../../src/HelpDlg /I../../src/MISC /I../../src/OptionDlg /I../../src/UserDlg /I../../../Common/Ccpp /I../../../NativeLang/src /Zi /nologo /W3 /WX- /Od /Oy /D WIN32 /D _WINDOWS /D _USRDLL /D HEXEDITOR_EXPORTS /D _VC80_UPGRADE=0x0700 /D _WINDLL /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\misc\ColorCombo.cpp ..\..\src\misc\ColorPopup.cpp ..\..\src\OptionDlg\ColumnDialog.cpp ..\..\src\UserDlg\CompareDialog.cpp ..\..\src\UserDlg\FindReplaceDialog.cpp ..\..\src\UserDlg\GotoDialog.cpp ..\..\src\HelpDlg\HelpDialog.cpp ..\..\src\Hex.cpp ..\..\src\HEXDialog.cpp ..\..\src\misc\ModifyMenu.cpp ..\..\src\misc\MultiTypeCombo.cpp ..\..\src\OptionDlg\OptionDialog.cpp ..\..\src\UserDlg\PatternDialog.cpp ..\..\src\HelpDlg\ToolTip.cpp ..\..\src\HelpDlg\URLCtrl.cpp ..\..\src\Utf8_16.cpp
+         ColorCombo.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ColorPopup.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+         ColumnDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>..\..\src\OptionDlg\ColumnDialog.cpp(48): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\OptionDlg\ColumnDialog.cpp(51): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+         CompareDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>c:\users\helen\desktop\hexeditor_0_9_5_src\hexeditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\src\HexDialog.h(86): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+         FindReplaceDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(27): warning C4005: “CB_SETMINVISIBLE”: 宏重定义
+                 C:\Program Files\Windows Kits\8.1\Include\um\commctrl.h(7469) : 参见“CB_SETMINVISIBLE”的前一个定义
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(194): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(199): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(258): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(271): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(453): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(518): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(253) : 参见“stricmp”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(645): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(662): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(664): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(683): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(685): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(691): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\UserDlg\FindReplaceDialog.cpp(693): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+         GotoDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>..\..\src\UserDlg\GotoDialog.cpp(208): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(215): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(224): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(231): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(254): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(259): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(261): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(273): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(937) : 参见“itoa”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(277): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(937) : 参见“itoa”的声明
+     1>..\..\src\UserDlg\GotoDialog.cpp(279): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(937) : 参见“itoa”的声明
+         HelpDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+         Hex.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>c:\users\helen\desktop\hexeditor_0_9_5_src\hexeditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\helen\desktop\hexeditor_0_9_5_src\hexeditor\src\HexDialog.h(86): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(109): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(110): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(111): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(112): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(113): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(114): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(115): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(346): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(352): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(361): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(362): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(284) : 参见“wcscat”的声明
+     1>..\..\src\Hex.cpp(367): warning C4309: “初始化”: 截断常量值
+     1>..\..\src\Hex.cpp(423): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(424): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(425): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(426): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(427): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(430): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(431): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(432): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(433): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(434): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(435): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(436): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(437): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(438): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(441): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(442): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(443): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(447): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(448): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(449): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(450): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(451): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(452): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\Hex.cpp(1039): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(1164): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(1166): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>..\..\src\Hex.cpp(1174): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>..\..\src\Hex.cpp(1248): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>..\..\src\Hex.cpp(1251): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\Hex.cpp(1252): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\Hex.cpp(1314): warning C4018: “<=”: 有符号/无符号不匹配
+     1>..\..\src\Hex.cpp(1465): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(1466): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(1469): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(284) : 参见“wcscat”的声明
+     1>..\..\src\Hex.cpp(1470): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\Hex.cpp(1472): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(284) : 参见“wcscat”的声明
+     1>..\..\src\Hex.cpp(1473): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(284) : 参见“wcscat”的声明
+     1>..\..\src\Hex.cpp(1546): warning C4018: “<”: 有符号/无符号不匹配
+         HEXDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>c:\users\helen\desktop\hexeditor_0_9_5_src\hexeditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\helen\desktop\hexeditor_0_9_5_src\hexeditor\src\HEXDialog.h(86): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>c:\users\helen\desktop\hexeditor_0_9_5_src\hexeditor\src\test.h(12): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\src\HEXDialog.cpp(861): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\HEXDialog.cpp(954): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(575) : 参见“wcstombs”的声明
+     1>..\..\src\HEXDialog.cpp(996): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>..\..\src\HEXDialog.cpp(994): warning C4101: “nextRawData”: 未引用的局部变量
+     1>..\..\src\HEXDialog.cpp(993): warning C4101: “nextMetaData”: 未引用的局部变量
+     1>..\..\src\HEXDialog.cpp(992): warning C4101: “nextSgmt”: 未引用的局部变量
+     1>..\..\src\HEXDialog.cpp(1168): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1170): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1595): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1886): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1887): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1888): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1889): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1890): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1891): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1892): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1893): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1894): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1895): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1896): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1897): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1898): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1903): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1904): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1905): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1906): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1907): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1908): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1909): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1910): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1911): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1912): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1913): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1914): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1915): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>..\..\src\HEXDialog.cpp(1974): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>..\..\src\HEXDialog.cpp(1977): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\HEXDialog.cpp(1982): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>..\..\src\HEXDialog.cpp(1985): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\HEXDialog.cpp(1993): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>..\..\src\HEXDialog.cpp(1996): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\HEXDialog.cpp(2001): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>..\..\src\HEXDialog.cpp(2004): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\HEXDialog.cpp(2034): warning C4018: “<=”: 有符号/无符号不匹配
+     1>..\..\src\HEXDialog.cpp(2127): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\HEXDialog.cpp(2133): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\HEXDialog.cpp(4336): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\HEXDialog.cpp(4343): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\HEXDialog.cpp(4695): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(575) : 参见“wcstombs”的声明
+     1>..\..\src\HEXDialog.cpp(4713): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+         ModifyMenu.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>..\..\src\misc\ModifyMenu.cpp(491): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\..\src\misc\ModifyMenu.cpp(492): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\..\src\misc\ModifyMenu.cpp(493): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         MultiTypeCombo.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>..\..\src\misc\MultiTypeCombo.cpp(327): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>..\..\src\misc\MultiTypeCombo.cpp(328): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+     1>..\..\src\misc\MultiTypeCombo.cpp(332): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\misc\MultiTypeCombo.cpp(333): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+     1>..\..\src\misc\MultiTypeCombo.cpp(443): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>..\..\src\misc\MultiTypeCombo.cpp(446): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+     1>..\..\src\misc\MultiTypeCombo.cpp(447): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(118) : 参见“strcat”的声明
+         OptionDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>..\..\src\OptionDlg\OptionDialog.cpp(89): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\OptionDlg\OptionDialog.cpp(125): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\OptionDlg\OptionDialog.cpp(278): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+     1>..\..\src\OptionDlg\OptionDialog.cpp(279): warning C4996: '_itow': This function or variable may be unsafe. Consider using _itow_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(687) : 参见“_itow”的声明
+         PatternDialog.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\src\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>..\..\src\UserDlg\PatternDialog.cpp(29): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\PatternDialog.cpp(45): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+     1>..\..\src\UserDlg\PatternDialog.cpp(179): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+     1>..\..\src\UserDlg\PatternDialog.cpp(181): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\wchar.h(787) : 参见“_swprintf”的声明
+         ToolTip.cpp
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\Common\Ccpp\Notepad_plus_rc.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(304): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+     1>C:\Users\Helen\Desktop\HexEditor_0_9_5_src\NativeLang\src\NativeLang_def.h(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(330) : 参见“wcstok”的声明
+         URLCtrl.cpp
+     1>..\..\src\HelpDlg\URLCtrl.cpp(102): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(294) : 参见“wcscpy”的声明
+         Utf8_16.cpp
+     1>..\..\src\Utf8_16.cpp(224): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+         正在生成代码...
+     1>c:\users\helen\desktop\hexeditor_0_9_5_src\hexeditor\src\hexdialog.cpp(1020): warning C4700: 使用了未初始化的局部变量“curRawData”
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../src /I../../src/HelpDlg /I../../src/MISC /I../../src/OptionDlg /I../../src/UserDlg /I../../../Common/Ccpp /I../../../NativeLang/src /Zi /nologo /W3 /WX- /Od /Oy /D WIN32 /D _WINDOWS /D _USRDLL /D HEXEDITOR_EXPORTS /D _VC80_UPGRADE=0x0700 /D _WINDLL /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\StaticDialog1.obj" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\Common\Ccpp\StaticDialog.cpp
+         StaticDialog.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../src /I../../src/HelpDlg /I../../src/MISC /I../../src/OptionDlg /I../../src/UserDlg /I../../../Common/Ccpp /I../../../NativeLang/src /Zi /nologo /W3 /WX- /Od /Oy /D WIN32 /D _WINDOWS /D _USRDLL /D HEXEDITOR_EXPORTS /D _VC80_UPGRADE=0x0700 /D _WINDLL /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\stdafx1.obj" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\Common\Ccpp\stdafx.cpp
+         stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../src /I../../src/HelpDlg /I../../src/MISC /I../../src/OptionDlg /I../../src/UserDlg /I../../../Common/Ccpp /I../../../NativeLang/src /Zi /nologo /W3 /WX- /Od /Oy /D WIN32 /D _WINDOWS /D _USRDLL /D HEXEDITOR_EXPORTS /D _VC80_UPGRADE=0x0700 /D _WINDLL /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\SysMsg1.obj" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\Common\Ccpp\SysMsg.cpp
+         SysMsg.cpp
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(52): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdio.h(590) : 参见“_wfopen”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(73): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(75): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(77): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(79): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(81): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(83): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(85): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(87): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(89): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(92): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(94): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(96): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(98): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(100): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(103): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+     1>..\..\..\Common\Ccpp\SysMsg.cpp(106): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(413) : 参见“wcsicmp”的声明
+       ResourceCompile:
+         C:\Program Files\Windows Kits\8.1\bin\x86\rc.exe /D _VC80_UPGRADE=0x0700 /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\HEXDialog.res" ..\..\src\HEXDialog.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\HexEditor.dll" /INCREMENTAL:NO /NOLOGO shlwapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Release\HexEditor.pdb" /MAP:"C:\Projects\NppPlugins\HexEditor\map\HexEditor.map" /SUBSYSTEM:WINDOWS /STACK:"0" /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Release\HexEditor.lib" /MACHINE:X86 /SAFESEH /DLL Release\HEXDialog.res
+         Release\ColorCombo.obj
+         Release\ColorPopup.obj
+         Release\ColumnDialog.obj
+         Release\CompareDialog.obj
+         Release\FindReplaceDialog.obj
+         Release\GotoDialog.obj
+         Release\HelpDialog.obj
+         Release\Hex.obj
+         Release\HEXDialog.obj
+         Release\ModifyMenu.obj
+         Release\MultiTypeCombo.obj
+         Release\OptionDialog.obj
+         Release\PatternDialog.obj
+         Release\ToolTip.obj
+         Release\URLCtrl.obj
+         Release\Utf8_16.obj
+         Release\StaticDialog1.obj
+         Release\stdafx1.obj
+         Release\SysMsg1.obj
+            正在创建库 Release\HexEditor.lib 和对象 Release\HexEditor.exp
+         HexEditor.vcxproj -> C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\projects\2003\Release\HexEditor.dll
+     1>已完成生成项目“C:\Users\Helen\Desktop\HexEditor_0_9_5_src\HexEditor\projects\2003\HexEditor.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:18.72
