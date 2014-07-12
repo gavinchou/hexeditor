@@ -397,9 +397,9 @@ void loadSettings(void)
 
 
 	//new added
-	prop.colorProp.rgbLeadIn    = ::GetPrivateProfileInt(dlgEditor, rgbLeadIn, RGB(0x00,0xFF,0xFF), iniFilePath);
-	prop.colorProp.rgbMetaData  = ::GetPrivateProfileInt(dlgEditor, rgbMetaData, RGB(0xFF,0x00,0xFF), iniFilePath);
-	prop.colorProp.rgbRawData   = ::GetPrivateProfileInt(dlgEditor, rgbRawData, RGB(0xFF,0xFF,0x00), iniFilePath);
+	prop.colorProp.rgbLeadIn    = ::GetPrivateProfileInt(dlgEditor, rgbLeadIn, RGB(0xFF,0x00,0x00), iniFilePath);
+	prop.colorProp.rgbMetaData  = ::GetPrivateProfileInt(dlgEditor, rgbMetaData, RGB(0x00,0xFF,0x00), iniFilePath);
+	prop.colorProp.rgbRawData   = ::GetPrivateProfileInt(dlgEditor, rgbRawData, RGB(0x00,0x00,0xFF), iniFilePath);
 
 
 	::GetPrivateProfileString(dlgEditor, fontname, _T("Courier New"), prop.fontProp.szFontName, 256, iniFilePath);
@@ -672,7 +672,12 @@ HWND getCurrentHScintilla(void)
 void toggleHexEdit(void)
 {
     GetShortCuts(nppData._nppHandle);
+	pCurHexEdit->LogFile = fopen("e:\\testlog.txt", "wb");
+	pCurHexEdit->getVecMembers();
+
 	pCurHexEdit->doDialog(TRUE);
+	///////////////////////////////////////////////////////////////////////////////
+	
 	DialogUpdate();
 	setMenu();
 }
@@ -809,6 +814,7 @@ LRESULT CALLBACK SubWndProcNotepad(HWND hWnd, UINT message, WPARAM wParam, LPARA
 						return TRUE;
 					case IDM_SEARCH_GOTOLINE:
 						gotoDlg.doDialog(pCurHexEdit->getHSelf());
+						gotoDlg.hexEditor = *pCurHexEdit;
 						return TRUE;
 					case IDM_SEARCH_NEXT_BOOKMARK:
 						pCurHexEdit->NextBookmark();

@@ -198,7 +198,8 @@ typedef struct tHexProp
 	vector<tBkMk>		vBookmarks;				// bookmarks of the view
 	
 	//new added
-	BOOL				isTdsFile;		//is current file TDMS file
+	BOOL				isTdsFile;				//is current file TDMS file
+	BOOL				isTdsIndexFile;			//current file is TDMS Index File?
 
 	BOOL				isSel;					// is text selected...
 	eSel				selection;				// selection type

@@ -29,6 +29,8 @@
 #include <windows.h>
 #include <windowsx.h>
 #include <commctrl.h>
+#include "time.h"
+//#include "GotoDialog.h"
 
 #include "tables.h"
 
@@ -51,11 +53,21 @@ extern tClipboard	g_clipboard;
 class HexEdit : public StaticDialog, private SciSubClassWrp
 {
 public:
+
+	friend class GotoDialog;
 	//new added
 	vector<int> CurSgmtVec;
 	vector<int> CurMetaDataVec;
 	vector<int> CurRawDataVec;
-	vector<int> NextSgmtOffsetVec;
+
+	vector<int> CurSgmtVec_Index;
+	vector<int> CurMetaDataVec_Index;
+	//vector<int> NextSgmtOffsetVec;
+
+	FILE* f;
+	FILE* LogFile;
+	time_t start_time, end_time;
+	 int lastAccessSgmId ;
 
   	
 
@@ -339,6 +351,10 @@ public:
 	}
 
 	void SetStatusBar(void);
+	///////////////////////////////////////////////////////
+	void getVecMembers();
+
+
 
 protected :
 	BOOL CALLBACK run_dlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam);
@@ -365,14 +381,23 @@ private:
 	BOOL OnCharItem(WPARAM wParam, LPARAM lParam);
 	void SelectItem(UINT iItem, UINT iSubItem, INT iCursor = 0);
 	void DrawItemText(HDC hDc, DWORD item, INT subItem);
-	//new added
-	void DrawLeadIn(HDC hdc, DWORD item, INT subItem);
-	void DrawMetaData(HDC hdc, DWORD item, INT subItem);
-	void DrawRawData(HDC hdc, DWORD item, INT subItem);
-	void getVecMembers();
-	void DrawAreaWithColor(HDC hDc, int beg, int end, eColorType type );
+	//new added////////////////////////////////////////////////////////////
+	//eSelType GetColor(DWORD item, UINT subItem);
+	eSelType GetDataType(int offset);
+	eSelType GetDataType_Tdms(int offset);
+
+	eSelType GetDataType_Index(int offset);
 
 
+	void getVecMembers_Index();
+	void getVecMembers_Tdms();
+
+public:
+	void GetOpenTdsFileName();
+	int GetSgmId(int offset);
+	////////////////////////////////////////////////////////////////
+
+private: 
 	void DrawPartOfItemText(HDC hDc, RECT rc, RECT rcText, LPTSTR text, UINT beg, UINT length, eSelItem sel, eSelType type);
 
 	/* for edit in dump */
@@ -682,7 +707,9 @@ private:
 	UINT				_currLength;
 
 	/* properties of open files */
-	tHexProp*			_pCurProp;
+public:
+	tHexProp*			_pCurProp;//change private to public
+private:
 	vector<tHexProp>	_hexProp;
 
 	/* for selection */

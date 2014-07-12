@@ -83,6 +83,8 @@
 	#define IDC_STATIC_MAX                  	(IDD_GOTO_DLG + 7)
 	#define IDC_RADIO_ADDRESS               	(IDD_GOTO_DLG + 8)
 	#define IDC_RADIO_OFFSET                	(IDD_GOTO_DLG + 9)
+	#define IDC_RADIO_SGMTID					(IDD_GOTO_DLG + 10)
+
 
 
 #define    IDD_FINDREPLACE_DLG   20400

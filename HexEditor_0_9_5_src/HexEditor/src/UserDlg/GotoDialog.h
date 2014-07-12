@@ -21,6 +21,7 @@
 #include "StaticDialog.h"
 #include "Hex.h"
 #include "HexResource.h"
+#include "HexDialog.h"
 
 
 
@@ -68,6 +69,9 @@ private:
 
 	BOOL			_isHex;
 	BOOL			_isOff;
+	BOOL			_isSgmtID;
+public:
+	HexEdit			hexEditor;
 };
 
 

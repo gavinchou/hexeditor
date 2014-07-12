@@ -31,6 +31,7 @@ void GotoDlg::doDialog(HWND hHexEdit)
 	}
 
 	_hParentHandle = hHexEdit;
+	
 
 	UpdateDialog();
 	display();
@@ -48,6 +49,7 @@ BOOL CALLBACK GotoDlg::run_dlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARA
 			_isHex   = ::GetPrivateProfileInt(dlgEditor, gotoProp, 0, _iniFilePath);
 
 			_hLineEdit = ::GetDlgItem(_hSelf, IDC_EDIT_GOTO);
+
 
 			/* intial subclassing */
 			::SetWindowLongPtr(_hLineEdit, GWL_USERDATA, reinterpret_cast<LONG>(this));
@@ -78,6 +80,38 @@ BOOL CALLBACK GotoDlg::run_dlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARA
 					CHAR	text[16];
 					UINT	iPos = 0;
 					UINT	iMax = 0;
+					////////////////
+					if(_isSgmtID==TRUE)
+					{
+						::GetWindowTextA(_hLineEdit, text, 16);
+						iPos += atoi(text) - LINE_OFFSET;
+						//::MessageBoxA(NULL, (LPCSTR)iPos, "Reminder iPos", MB_OK);
+
+
+						::GetWindowTextA(_hLineEdit, text, 16);
+						iPos = ASCIIConvert(text);
+
+						UINT iCurID= iPos;
+						UINT iMaxID=this->hexEditor.CurSgmtVec.size(); 
+
+						if (iCurID> iMaxID) {
+							iCurID = iMaxID;
+						}
+						else if(iCurID< 0)
+							iCurID=1;
+
+						if(iCurID==1)
+							::SendMessage(_hParentHandle, HEXM_SETPOS, 0, (LPARAM)this->hexEditor.CurSgmtVec[iCurID-1]);
+						else
+							::SendMessage(_hParentHandle, HEXM_SETPOS, 0, (LPARAM)this->hexEditor.CurSgmtVec[iCurID-1]);
+					
+						
+						display(false);
+
+						break;
+					
+					}
+					/////////////////
 
 					if (_isHex == TRUE)
 					{
@@ -106,6 +140,7 @@ BOOL CALLBACK GotoDlg::run_dlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARA
 						::GetWindowTextA(_hLineEdit, text, 16);
 						iPos += atoi(text) - LINE_OFFSET;
 
+
 						::SendMessage(_hParentHandle, HEXM_GETLINECNT, 0, (LPARAM)&iMax);
 
 						if (iPos > iMax) {
@@ -124,12 +159,23 @@ BOOL CALLBACK GotoDlg::run_dlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARA
 					}
 					break;
 				}
+				case IDC_RADIO_SGMTID:
 				case IDC_RADIO_ADDRESS:
 				case IDC_RADIO_OFFSET:
 				{
+					/* get new states */
+					_isHex = (::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, BM_GETCHECK, 0, 0) == BST_CHECKED)? FALSE:TRUE;
+					_isOff = (::SendDlgItemMessage(_hSelf, IDC_RADIO_OFFSET, BM_GETCHECK, 0, 0) == BST_CHECKED)? TRUE:FALSE;
+					_isSgmtID = (::SendDlgItemMessage(_hSelf, IDC_RADIO_SGMTID, BM_GETCHECK, 0, 0)==BST_CHECKED) ? TRUE:FALSE;
+					HWND CheckLine=::GetDlgItem(_hSelf, IDC_CHECK_LINE);
+					if(_isSgmtID==TRUE)
+						::EnableWindow(CheckLine, false);
+					else
+						::EnableWindow(CheckLine, true);
 					calcAddress();
 					break;
 				}
+
 				default:
 					break;
 			}
@@ -186,12 +232,10 @@ void GotoDlg::calcAddress(void)
 	CHAR		text[17];
 	CHAR		temp[17];
 
-	/* get new states */
-	_isHex = (::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, BM_GETCHECK, 0, 0) == BST_CHECKED)? FALSE:TRUE;
-	_isOff = (::SendDlgItemMessage(_hSelf, IDC_RADIO_OFFSET, BM_GETCHECK, 0, 0) == BST_CHECKED)? TRUE:FALSE;
 
-	/* update also min and max */
+
 	UpdateDialog();
+	
 
 	/* change user input */
 	::SendMessage(_hParentHandle, HEXM_GETSETTINGS, 0, (LPARAM)&prop);
@@ -200,6 +244,24 @@ void GotoDlg::calcAddress(void)
 
 	if (strlen(temp) != 0)
 	{
+		//////////////////////////////
+		if (_isSgmtID ==TRUE)
+		{
+			//FILE* f=hexEditor.GetOpenTdsFileName();
+			//hexEditor.getVecMembers();
+			//::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, BM_SETCHECK, BST_UNCHECKED, 0);
+			/*	EnableWindow(IDC_CHECK_LINE, false);*/
+			//::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, WM_ENABLE, true, 0);	
+			newPos = atoi(temp) * prop.columns * prop.bits;
+			sprintf(text, "%x", newPos);
+			::SetWindowTextA(_hLineEdit, text);
+			//::MessageBoxA(NULL, " _isSgmtID is true", "reminder",MB_OK);
+			return ;
+		}
+
+
+		/////////////////////////////////
+
 		if (_isOff == TRUE)
 		{
 			if (_isHex == TRUE)
@@ -232,6 +294,7 @@ void GotoDlg::calcAddress(void)
 				::SetWindowTextA(_hLineEdit, text);
 			}
 		}
+
 	}
 }
 
@@ -242,6 +305,23 @@ void GotoDlg::UpdateDialog(void)
 	CHAR		text[17];
 	::SendMessage(_hParentHandle, HEXM_GETSETTINGS, 0, (LPARAM)&prop);
 
+	if(_isSgmtID==TRUE)
+	{	
+		::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, WM_ENABLE, true, 0);	
+		UINT		curPos		= 0;
+		UINT		maxPos		= 0;
+		::SendMessage(_hParentHandle, HEXM_GETPOS, 0, (LPARAM)&curPos);
+		::SendMessage(_hParentHandle, HEXM_GETLENGTH, 0, (LPARAM)&maxPos);
+
+		/* set current line info */
+		::SetWindowTextA(::GetDlgItem(_hSelf, IDC_CURRLINE), itoa(this->hexEditor.GetSgmId(curPos)+1, text, 10));
+		//::MessageBoxA(NULL, (LPCSTR)(curLine + LINE_OFFSET), "reminder",MB_OK);
+		/* set max possible position */
+		::SetWindowTextA(::GetDlgItem(_hSelf, IDC_LASTLINE), itoa(hexEditor.CurSgmtVec.size(), text, 10));
+		::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, WM_ENABLE, false, 0);	
+		return ;
+	}
+
 	if (_isHex == TRUE)
 	{
 		UINT		curPos		= 0;
@@ -251,8 +331,9 @@ void GotoDlg::UpdateDialog(void)
 		maxPos--;
 
 		/* set current line info */
-		sprintf(text, "%08X", curPos);
+		sprintf(text, "%08X", curPos);			
 		::SetDlgItemTextA(_hSelf, IDC_CURRLINE, text);
+
 
 		/* set max possible position */
 		if (_isOff == TRUE) {
@@ -260,6 +341,7 @@ void GotoDlg::UpdateDialog(void)
 		} else {
 			sprintf(text, "%08X", maxPos);
 		}
+
 		::SetDlgItemTextA(_hSelf, IDC_LASTLINE, text);
 	}
 	else
