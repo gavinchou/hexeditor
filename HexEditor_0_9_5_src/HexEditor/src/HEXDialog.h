@@ -29,6 +29,9 @@
 #include <windows.h>
 #include <windowsx.h>
 #include <commctrl.h>
+#include "ToolTip.h"
+
+
 #include "time.h"
 //#include "GotoDialog.h"
 
@@ -53,8 +56,6 @@ extern tClipboard	g_clipboard;
 class HexEdit : public StaticDialog, private SciSubClassWrp
 {
 public:
-
-	friend class GotoDialog;
 	//new added
 	vector<int> CurSgmtVec;
 	vector<int> CurMetaDataVec;
@@ -63,6 +64,8 @@ public:
 	vector<int> CurSgmtVec_Index;
 	vector<int> CurMetaDataVec_Index;
 	//vector<int> NextSgmtOffsetVec;
+
+	ToolTip* toolTip;
 
 	FILE* f;
 	FILE* LogFile;
@@ -388,6 +391,10 @@ private:
 
 	eSelType GetDataType_Index(int offset);
 
+	void selectArea(int offset, eSelType selType);
+
+
+
 
 	void getVecMembers_Index();
 	void getVecMembers_Tdms();
@@ -672,7 +679,9 @@ private:
 
 private:
 	/********************************* handle of list ********************************/
+public:
 	HWND				_hListCtrl;
+private:
 	HWND				_hHeader;
 	HFONT				_hFont;
 	

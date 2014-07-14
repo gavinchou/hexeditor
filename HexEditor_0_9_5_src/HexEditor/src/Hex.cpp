@@ -679,6 +679,14 @@ void toggleHexEdit(void)
 	///////////////////////////////////////////////////////////////////////////////
 	
 	DialogUpdate();
+
+	//////////////////////////////////////////////
+	////got the position of error tag.
+	if(pCurHexEdit->CurSgmtVec.size()!= pCurHexEdit->CurMetaDataVec.size())
+	{
+	::SendMessageA(pCurHexEdit->getHSelf(), HEXM_SETPOS, 0, (LPARAM)pCurHexEdit->CurSgmtVec.back());
+	}
+	////////////////////////////////////////////////////////////////////////
 	setMenu();
 }
 
@@ -916,6 +924,11 @@ LRESULT CALLBACK SubWndProcNotepad(HWND hWnd, UINT message, WPARAM wParam, LPARA
 					OutputDebugString(_T("IDC_PREV/NEXT_DOC\n"));
 					SystemUpdate();
 					pCurHexEdit->doDialog();
+					pCurHexEdit->toolTip->init((HINSTANCE)pCurHexEdit->_hListCtrl, pCurHexEdit->_hListCtrl);
+
+
+
+					//pCurHexEdit->toolTip->_startPt
 					pCurHexEdit->SetStatusBar();
 					break;
 				}
