@@ -100,11 +100,17 @@ BOOL CALLBACK GotoDlg::run_dlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARA
 						else if(iCurID< 0)
 							iCurID=1;
 
-						if(iCurID==1)
-							::SendMessage(_hParentHandle, HEXM_SETPOS, 0, (LPARAM)this->hexEditor.CurSgmtVec[iCurID-1]);
-						else
-							::SendMessage(_hParentHandle, HEXM_SETPOS, 0, (LPARAM)this->hexEditor.CurSgmtVec[iCurID-1]);
-					
+						//if(iCurID==1)
+						//	::SendMessage(_hParentHandle, HEXM_SETPOS, 0, (LPARAM)this->hexEditor.CurSgmtVec[iCurID-1]);
+						//else
+						//	::SendMessage(_hParentHandle, HEXM_SETPOS, 0, (LPARAM)this->hexEditor.CurSgmtVec[iCurID-1]);
+
+						/////////////////////////
+						//if(iCurID==1)
+							::SendMessage(_hParentHandle, HEXM_SETSEL, (WPARAM)this->hexEditor.CurSgmtVec[iCurID-1], (LPARAM)this->hexEditor.CurSgmtVec[iCurID]);
+						/*else
+							::SendMessage(_hParentHandle, HEXM_SETSEL, (WPARAM)this->hexEditor.CurSgmtVec[iCurID-2], (LPARAM)this->hexEditor.CurSgmtVec[iCurID-1]);
+					*/
 						
 						display(false);
 
@@ -247,11 +253,6 @@ void GotoDlg::calcAddress(void)
 		//////////////////////////////
 		if (_isSgmtID ==TRUE)
 		{
-			//FILE* f=hexEditor.GetOpenTdsFileName();
-			//hexEditor.getVecMembers();
-			//::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, BM_SETCHECK, BST_UNCHECKED, 0);
-			/*	EnableWindow(IDC_CHECK_LINE, false);*/
-			//::SendDlgItemMessage(_hSelf, IDC_CHECK_LINE, WM_ENABLE, true, 0);	
 			newPos = atoi(temp) * prop.columns * prop.bits;
 			sprintf(text, "%x", newPos);
 			::SetWindowTextA(_hLineEdit, text);
